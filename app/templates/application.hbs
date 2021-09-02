@@ -1,5 +1,6 @@
-{{page-title "JustSobbing"}}
+<Parent @data={{this.data}} as |components|>
+  <components.theChild />
+  {{!-- {{components.theChild}} --}}
+</Parent>
 
-<h2 id="title">Welcome to Ember</h2>
-
-{{outlet}}
+<button {{on "click" this.update}} type="button">CLICK ME</button>
