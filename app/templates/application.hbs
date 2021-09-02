@@ -1,6 +1,5 @@
-<Parent @data={{this.data}} as |components|>
-  <components.theChild />
-  {{!-- {{components.theChild}} --}}
-</Parent>
-
-<button {{on "click" this.update}} type="button">CLICK ME</button>
+<Update @data={{@model}} as |components|>
+  <components.content />
+  {{!-- {{components.content}} --}}
+  {{!-- {{component components.content}} --}}
+</Update>

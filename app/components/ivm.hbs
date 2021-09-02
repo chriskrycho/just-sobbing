@@ -1,0 +1,9 @@
+<div class='component'>
+  <p>Items: {{this.length}}</p>
+  <p>Extra: {{@extra}}</p>
+  <ul>
+    {{#each @items as |item|}}
+      <li>{{item}}</li>
+    {{/each}}
+  </ul>
+</div>

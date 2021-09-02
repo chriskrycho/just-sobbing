@@ -1,0 +1,5 @@
+<div class='component'>
+  <p>SLP</p>
+  {{log "SLP" @data.items.length}}
+  {{yield (hash image=(component 'ivm' items=@data.items))}}
+</div>

@@ -1,0 +1,7 @@
+<div class='component'>
+  <p>SLC</p>
+  {{log "SLC" @data.items.length}}
+  <Slp @data={{@data}} as |sL|>
+    <sL.image @extra="cool" />
+  </Slp>
+</div>

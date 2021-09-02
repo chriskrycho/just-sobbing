@@ -1,0 +1,7 @@
+<div class='component'>
+  <p>Update</p>
+  {{log "Update" this.content.items.length}}
+  {{yield (hash content=(component 'slc' data=this.content))}}
+  <button {{on "click" this.updateBad}} type="button">BAD</button>
+  <button {{on "click" this.updateGood}} type="button">GOOD</button>
+</div>
